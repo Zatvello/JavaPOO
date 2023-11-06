@@ -23,7 +23,6 @@ public class Caneta {
             System.out.println("Estou Rabiscando");
         }
 
-
     }
 
     void tampar() {
