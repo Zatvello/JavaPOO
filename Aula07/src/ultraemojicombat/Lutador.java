@@ -28,23 +28,38 @@ public class Lutador {
     // Métodos Públicos
     public void apresentar() {
         System.out.println("-------> Apresentação <-------");
-        System.out.println("Lutador: " + this.getNome());
-        System.out.println("Origem: " + this.nacionalidade);
-        System.out.println(this.getIdade() + " anos");
-        System.out.println(this.getAltura() + "m de altura");
-        System.out.println("Pesando: " + this.getPeso() + "kg");
-        System.out.println("Ganhou: " + this.getVitorias());
-        System.out.println("Perdeu: " + this.getDerrotas());
-        System.out.println("Empatou: " + this.empates);
+        System.out.println("CHEGOU A HORA! Apresentamos o lutador " + this.getNome());
+        System.out.println("Diretamente de " + this.nacionalidade);
+        System.out.println("Com " + this.getIdade() + " anos e " + this.getAltura() + "m de altura");
+        System.out.println("Pesando " + this.getPeso() + "kg");
+        System.out.print(this.getVitorias() + ((this.getVitorias() == 1)?" vitória":" vitórias"));
+        System.out.print(", " + this.getDerrotas() + ((this.getDerrotas() == 1)?" derrota": " derrotas"));
+        System.out.println(" e " + this.getEmpates() + ((this.getEmpates() == 1)? " empate": " empates"));
     }
 
     public void status() {
         System.out.println("------------------------------");
         System.out.println(this.getNome());
         System.out.println("é um peso " + this.getCategoria());
-        System.out.println(this.getVitorias() + " vitórias");
-        System.out.println(this.getDerrotas() + " derrotas");
-        System.out.println(this.getEmpates() + " empates");
+        System.out.println("Ganhou " + vezes(getVitorias()));
+        System.out.println("Perdeu " + vezes(getDerrotas()));
+        System.out.println("Empatou " + vezes(getEmpates()));
+    }
+
+    public String vezes(int vz) { // Função para retornar o número de vezes (singular e/ou plural)
+        String res = "";
+            switch (vz) {
+                case 0:
+                    res = "nenhuma vez";
+                    break;
+                case 1:
+                    res = "uma vez";
+                    break;
+                default:
+                    res = vz + " vezes";
+                    break;
+            }
+        return res;
     }
 
     public void ganharLuta() {
@@ -106,7 +121,7 @@ public class Lutador {
         return this.categoria;
     }
 
-    public void setCategoria() {
+    private void setCategoria() {
         if (this.peso < 52.2) {
             this.categoria = "Inválido";
 
@@ -141,7 +156,7 @@ public class Lutador {
     }
 
     public int getEmpates() {
-        return this.derrotas;
+        return this.empates;
     }
 
     public void setEmpates(int em) {
