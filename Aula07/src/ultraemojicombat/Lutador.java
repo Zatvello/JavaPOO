@@ -74,7 +74,7 @@ public class Lutador {
         this.setEmpates(this.getEmpates() + 1);
     }
 
-    // Métodos especiais
+    // Métodos Especiais
 
     public String getNome() {
         return this.nome;
