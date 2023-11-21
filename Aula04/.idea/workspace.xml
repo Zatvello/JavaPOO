@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e866a2f3-dc6b-47ba-9724-d579edfd985c" name="Changes" comment="" />
+    <list default="true" id="e866a2f3-dc6b-47ba-9724-d579edfd985c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Aula011/Aula011.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/ProjetoPessoas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula06/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula06/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula07/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula07/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetoLivro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoLivro/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/ProjetoLivro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/ProjetoLivro.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +40,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2Xn5Rggx4LKvDG09AR9v36Fb9k8" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -31,15 +51,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
