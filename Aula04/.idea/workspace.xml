@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e866a2f3-dc6b-47ba-9724-d579edfd985c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula011/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula011/Aula011.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetoPessoas/ProjetoPessoas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula011/src/aula011/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula011/src/aula011/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula011/src/aula011/aula011.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula011/src/aula011/Aula011.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula05/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula06/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula06/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula07/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula07/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetoLivro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoLivro/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/ProjetoLivro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoLivro/src/projetolivro/ProjetoLivro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
