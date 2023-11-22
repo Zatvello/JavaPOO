@@ -6,6 +6,7 @@ public class Cachorro extends Lobo {
         System.out.println("Au! Au! Au!");
     }
 
+    //Sobrecarga
     public void reagir(String frase) {
         if (frase.equals("Toma comida") || frase.equals("Olá") || frase.equals("Cheguei")) {
             System.out.println("Abanar e latir");
@@ -14,6 +15,7 @@ public class Cachorro extends Lobo {
         }
     }
 
+    //Sobrecarga
     public void reagir(int hora, int min) {
         if (hora < 12) {
             System.out.println("Abanar");
@@ -24,6 +26,7 @@ public class Cachorro extends Lobo {
         }
     }
 
+    //Sobrecarga
     public void reagir(boolean dono) {
         if (dono) {
             System.out.println("Abanar");
@@ -33,6 +36,7 @@ public class Cachorro extends Lobo {
         }
     }
 
+    //Sobrecarga
     public void reagir(int idade, float peso) {
         if (idade < 5) { // if mais Novo
             if (peso < 10) { // Leve
