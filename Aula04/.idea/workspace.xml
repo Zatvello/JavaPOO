@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e866a2f3-dc6b-47ba-9724-d579edfd985c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Aula13/src/aula13/Cachorro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula13/src/aula13/Cachorro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoYoutube/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoYoutube/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoYoutube/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoYoutube/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetoYoutube/ProjetoYoutube.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula12/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula12/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
