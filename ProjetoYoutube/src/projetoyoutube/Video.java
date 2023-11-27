@@ -2,7 +2,7 @@ package projetoyoutube;
 
 public class Video implements AcoesVideo{
     private String titulo;
-    private int avaliacao;
+    private float avaliacao;
     private int views;
     private int curtidas;
     private boolean reproduzindo;
@@ -17,17 +17,17 @@ public class Video implements AcoesVideo{
 
     @Override
     public void play() {
-
+        this.reproduzindo = true;
     }
 
     @Override
     public void pause() {
-
+        this.reproduzindo = false;
     }
 
     @Override
     public void like() {
-
+        this.curtidas++;
     }
 
     public String getTitulo() {
@@ -38,12 +38,27 @@ public class Video implements AcoesVideo{
         this.titulo = titulo;
     }
 
-    public int getAvaliacao() {
+    public float getAvaliacao() {
         return avaliacao;
     }
 
+    float x = 0;
+    int totAva = 0;
     public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+        /*int nova = 0;
+        nova = nova + avaliacao;*/
+        /*x += avaliacao;
+        this.avaliacao = (int) x / this.views;*/
+
+        totAva++; // Total de pessoas que avaliaram
+        x = x + avaliacao; // Soma das avaliações
+        this.avaliacao = x / totAva; // Média das avaliações
+        System.out.println("---------------------------");
+        System.out.println("Avaliação com o valor " + avaliacao + " enviada com sucesso!" + " Avaliação total de "+ this.getTitulo() + ": " + this.avaliacao + ".");
+        System.out.print(totAva + (totAva == 1? " pessoa avaliou ": " pessoas avaliaram "));
+        System.out.println(this.getTitulo());
+        System.out.println("---------------------------");
+
     }
 
     public int getViews() {

@@ -2,10 +2,41 @@ package projetoyoutube;
 
 public class ProjetoYoutube {
     public static void main(String[] args) {
-        Video[] v = new Video[3];
-        v[1] = new Video("Oi");
-        System.out.println(v[1].getAvaliacao());
-        System.out.println(v[1].getTitulo());
-        System.out.println>>(v[1].toString());
+        /*Video[] v = new Video[3];
+        v[1] = new Video("Xuxa");
+        v[2] = new Video("Abracadabra");*/
+
+        //Pessoa p = new Pessoa("Caio", 23, "Masculino");
+        /*Gafanhoto g[] = new Gafanhoto[2];
+        g[0] = new Gafanhoto("Caio", 23, "Masculino", "caicac");
+        Visualizacao vis[] = new Visualizacao[2];
+
+        vis[0] = new Visualizacao(g[0], v[1]); // Caio assiste Xuxa
+        vis[0].avaliar();
+        System.out.println(vis[0].toString());
+        vis[0] = new Visualizacao(g[0], v[2]);
+        vis[0].avaliar(87.0f);
+        System.out.println(vis[0].toString());
+        vis[1] = new Visualizacao(g[0], v[2]);
+        System.out.println("-----------------");
+        System.out.println(vis[1].toString());*/
+
+        Video v[] = new Video[3];
+        v[0] = new Video("Aula 1 de POO");
+        v[1] = new Video("Aula 12 de PHP");
+        v[2] = new Video("Aula 10 de HTML5");
+
+        Gafanhoto g[] = new Gafanhoto[2];
+        g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
+        g[1] = new Gafanhoto("Creuza", 12, "F", "creuzita");
+
+        Visualizacao vis[] = new Visualizacao[5];
+        vis[0] = new Visualizacao(g[0], v[2]); // Jubileu assiste HTML5
+        vis[0].avaliar();
+        System.out.println(vis[0].toString());
+
+        vis[1] = new Visualizacao(g[0], v[2]); // Jubileu assiste PHP
+        vis[0].avaliar(87.0f);
+        System.out.println(vis[0].toString());
     }
 }

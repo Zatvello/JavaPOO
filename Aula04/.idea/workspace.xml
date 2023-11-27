@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e866a2f3-dc6b-47ba-9724-d579edfd985c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/Gafanhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/Gafanhoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/ProjetoYoutube.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/ProjetoYoutube.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetoYoutube/src/projetoyoutube/Video.java" afterDir="false" />
     </list>
