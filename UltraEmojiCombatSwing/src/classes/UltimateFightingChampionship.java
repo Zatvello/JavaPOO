@@ -1,6 +1,6 @@
 package classes;
 
-public class UltraEmojiCombat {
+public class UltimateFightingChampionship {
 
     public static void main(String[] args) {
         Lutador l[] = new Lutador[6];

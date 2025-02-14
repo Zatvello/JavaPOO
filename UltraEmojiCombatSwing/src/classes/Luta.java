@@ -18,10 +18,15 @@ public class Luta {
             this.setAprovada(true);
             this.desafiado = l1;
             this.desafiante = l2;
-        } else {
+        } else if (!l1.getCategoria().equals(l2.getCategoria())) { // Luta não pode acontecer pois categorias diferentes
+            System.out.println("A luta não pode acontecer pois " + l1.getNome() + " pertence a categoria " + l1.getCategoria() + ", diferentemente de "+ l2.getNome() + ", que pertence a categoria " + l2.getCategoria());
             this.setAprovada(false);
             this.desafiado = null;
             this.desafiante = null;
+
+        } else { // Luta não pode acontecer pois lutador lutando contra si mesmo
+            System.out.println(l1.getNome() + " não pode lutar contra si mesmo");
+            this.setAprovada(false);
         }
     }
 
@@ -38,7 +43,7 @@ public class Luta {
             System.out.println("Random: " + vencedor);
 
             if (vencedor == 1) { // Vitória Desafiado(l1) em cima de Desafiante(l2)
-                System.out.println("Desafiado: "+ desafiado.getNome() + " vence a luta contra " + desafiante.getNome() + "!!!");
+                System.out.println("Desafiado: " + desafiado.getNome() + " vence a luta contra " + desafiante.getNome() + "!!!");
                 desafiado.ganharLuta();
                 desafiante.perderLuta();
                 setVencedor(desafiado.getNome());
@@ -60,8 +65,10 @@ public class Luta {
             }
             System.out.println("=============================");
             posluta();
-        } else {
-            System.out.println("Luta não pode acontecer");
+//        } else if (desafiado == desafiante){
+//            System.out.println("Lutador não pode lutar contra si mesmo");
+        } else { // Se luta não for aprovada
+            System.out.println("Luta não aprovada");
         }
     }
 
@@ -69,14 +76,14 @@ public class Luta {
     public void posluta() {
         System.out.println("-------> Estatísticas Pós Luta <-------");
         System.out.println(desafiado.getNome() + " agora tem: ");
-        System.out.print(desafiado.getVitorias() + ((desafiado.getVitorias() == 1)?" vitória":" vitórias"));
-        System.out.print(", " + desafiado.getDerrotas() + ((desafiado.getDerrotas() == 1)?" derrota": " derrotas"));
-        System.out.println(" e " + desafiado.getEmpates() + ((desafiado.getEmpates() == 1)? " empate": " empates"));
+        System.out.print(desafiado.getVitorias() + ((desafiado.getVitorias() == 1) ? " vitória" : " vitórias"));
+        System.out.print(", " + desafiado.getDerrotas() + ((desafiado.getDerrotas() == 1) ? " derrota" : " derrotas"));
+        System.out.println(" e " + desafiado.getEmpates() + ((desafiado.getEmpates() == 1) ? " empate" : " empates"));
         System.out.println("---------------------------------------");
         System.out.println(desafiante.getNome() + " agora tem: ");
-        System.out.print(desafiante.getVitorias() + ((desafiante.getVitorias() == 1)?" vitória":" vitórias"));
-        System.out.print(", " + desafiante.getDerrotas() + ((desafiante.getDerrotas() == 1)?" derrota": " derrotas"));
-        System.out.println(" e " + desafiante.getEmpates() + ((desafiante.getEmpates() == 1)? " empate": " empates"));
+        System.out.print(desafiante.getVitorias() + ((desafiante.getVitorias() == 1) ? " vitória" : " vitórias"));
+        System.out.print(", " + desafiante.getDerrotas() + ((desafiante.getDerrotas() == 1) ? " derrota" : " derrotas"));
+        System.out.println(" e " + desafiante.getEmpates() + ((desafiante.getEmpates() == 1) ? " empate" : " empates"));
     }
 
     // Métodos Especiais

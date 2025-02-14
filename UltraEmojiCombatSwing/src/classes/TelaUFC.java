@@ -1,10 +1,11 @@
 package classes;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TelaUltraEmojiCombat extends JFrame {
+public class TelaUFC extends JFrame {
     private JPanel mainPanel;
     private JSpinner txtNumLutadores;
     private JCheckBox checkBox1;
@@ -23,6 +24,7 @@ public class TelaUltraEmojiCombat extends JFrame {
     private JPanel resultadoLuta;
     private JTextPane txtpaneResultado;
     private JLabel lblResultadoLuta;
+    private JPanel resultadoErro;
 
     int c = 0;
     int i = 0;
@@ -36,17 +38,20 @@ public class TelaUltraEmojiCombat extends JFrame {
     int[] lutEmpates = new int[25];
 
 
-    public TelaUltraEmojiCombat() {
+    public TelaUFC() {
         setTitle("UFC");
         setContentPane(mainPanel);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
         setLocationRelativeTo(null);
-        setSize(620, 600);
+        setSize(620, 670);
         Luta.setVisible(false);
         marcarLuta.setVisible(false);
         resultadoLuta.setVisible(false);
+
+        SpinnerModel sm = new SpinnerNumberModel(1, 1, 9, 1);
+        txtNumLutadores.setModel(sm);
 
         btnAddNumLutadores.addActionListener(new ActionListener() {
             @Override
@@ -109,11 +114,31 @@ public class TelaUltraEmojiCombat extends JFrame {
                                 if (luta.getAprovada()) {
                                     marcarLuta.setVisible(false);
                                     resultadoLuta.setVisible(true);
-                                    txtpaneResultado.setText((l[vetorLutador1].getNome()));
-                                    lblResultadoLuta.setText(("Vencedor: " + luta.getVencedor() + "\nPerdedor: "+ luta.getPerdedor()));
-                                    txtpaneResultado.setText(("Vencedor: " + luta.getVencedor() + "\nPerdedor: "+ luta.getPerdedor()));
-                                } else { // Painel luta não pode acontecer
+                                    lblResultadoLuta.setForeground(Color.BLACK);
 
+                                    txtpaneResultado.setText((l[vetorLutador1].getNome())); // ?
+
+                                    lblResultadoLuta.setText("Vencedor: " + luta.getVencedor() + "\n - Perdedor: "+ luta.getPerdedor());
+                                    txtpaneResultado.setText("Vencedor: " + luta.getVencedor() + "\nPerdedor: " +
+                                            luta.getPerdedor() + "\n-------> Estatísticas Pós Luta <-------\n" +
+                                            l[vetorLutador1].getNome() + " agora tem: \n" + l[vetorLutador1].getVitorias() + ((l[vetorLutador1].getVitorias() == 1) ? " vitória" : " vitórias") +
+                                            ", " + l[vetorLutador1].getDerrotas() + ((l[vetorLutador1].getDerrotas() == 1) ? " derrota" : " derrotas") +
+                                            " e " + l[vetorLutador1].getEmpates() + ((l[vetorLutador1].getEmpates() == 1) ? " empate" : " empates") +
+                                            "\n---------------------------------------\n" +
+                                            l[vetorLutador2].getNome() + " agora tem: \n" + l[vetorLutador2].getVitorias() + ((l[vetorLutador2].getVitorias() == 1) ? " vitória" : " vitórias") +
+                                            ", " + l[vetorLutador2].getDerrotas() + ((l[vetorLutador2].getDerrotas() == 1) ? " derrota" : " derrotas") +
+                                            " e " + l[vetorLutador2].getEmpates() + ((l[vetorLutador2].getEmpates() == 1) ? " empate" : " empates"));
+                                } else if (!l[vetorLutador1].getCategoria().equals(l[vetorLutador2].getCategoria())){ // Painel luta não pode acontecer categorias diferentes
+                                    resultadoLuta.setVisible(true);
+
+                                    lblResultadoLuta.setForeground(Color.RED);
+                                    lblResultadoLuta.setText("A luta não pode acontecer");
+                                    txtpaneResultado.setText("A luta não pode acontecer pois " + l[vetorLutador1].getNome() + " pertence a categoria " + l[vetorLutador1].getCategoria() + ", diferentemente de "+ l[vetorLutador2].getNome() + ", que pertence a categoria " + l[vetorLutador2].getCategoria());
+                                    //txtpaneResultado.setText("A luta não pode acontecer pois ou o lutador está lutando contra si mesmo ou está lutando contra um lutador de uma categoria diferente");
+                                } else { // Luta não pode acontecer pois lutador lutando contra si mesmo
+                                    lblResultadoLuta.setForeground(Color.RED);
+                                    lblResultadoLuta.setText("A luta não pode acontecer");
+                                    txtpaneResultado.setText(l[vetorLutador1].getNome() + " não pode lutar contra si mesmo");
                                 }
                                 marcarLuta.setVisible(true);
 
@@ -132,6 +157,6 @@ public class TelaUltraEmojiCombat extends JFrame {
     }
 
     public static void main(String[] args) {
-        new TelaUltraEmojiCombat();
+        new TelaUFC();
     }
 }
